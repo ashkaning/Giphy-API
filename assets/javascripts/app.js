@@ -1,11 +1,11 @@
 
-var movies = ["The Matrix", "The Notebook", "Mr. Nobody", "The Lion King"];
+var movies = ["Cat", "Dog", "Monkey", "Elephant","Matrix", "Birds","Animals","Earth"];
 
 function displayMovieInfo() {
-
+  
   var movie = $(this).attr("data-name");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    movie + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
+    movie + "&api_key="+api+"&limit=10";
 
 
   $.ajax({
@@ -20,6 +20,7 @@ function displayMovieInfo() {
       imageTag.attr("data-still",results[i].images.fixed_height_still.url)
       imageTag.attr("data-animate",results[i].images.fixed_height.url)
       imageTag.attr("data-state","still")
+      imageTag.addClass("img-thumbnail")
       imageTag.addClass("gif")
       $("#showMovie").append(imageTag)
     }

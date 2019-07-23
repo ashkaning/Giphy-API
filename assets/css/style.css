@@ -1,0 +1,21 @@
+body{
+    background-image: url(../image/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+label,h1{
+    color:white;
+}
+.row{
+    margin-top:20px !important;
+    margin-bottom: 20px !important;
+}
+form{
+    margin-top: 30px !important;
+}
+button{
+    margin: 0 5px 0 5px;
+}
+hr{
+    box-shadow: 5px 5px 5px 5px;
+}

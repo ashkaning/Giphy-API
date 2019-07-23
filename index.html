@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Giphy API Learning</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link type="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Movie Search</h1>
-            <div id="buttons-view"></div>
 
-            <form id="movie-form">
-              <label for="movie-input">Add a Movie, Yo!</label>
-              <input type="text" id="movie-input"><br>
-        
-              <input id="add-movie" type="submit" value="Add a Movie, Yo!">
-            </form>
-        
-            <div id="movies-view"></div>
-            <div id="showMovie"></div>
-            
-             
+<head>
+    <title>Giphy API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Giphy Search</h1>
+                <div id="buttons-view"></div>
             </div>
-            <script src="assets/javascripts/app.js"></script>
-    </body>
+
+            <div class="col-md-3">
+                <form id="movie-form">
+                    <label for="movie-input">Add Your Subject</label>
+                    <input type="text" id="movie-input"><br>
+
+                    <input id="add-movie" type="submit" value="Add!">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="movies-view"></div>
+                <div id="showMovie"></div>
+            </div>
+        </div>
+
+
+
+    
+    </div>
+    <script src="assets/javascripts/api.js"></script>
+    <script src="assets/javascripts/app.js"></script>
+</body>
+
 </html>
